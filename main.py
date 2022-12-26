@@ -1,10 +1,13 @@
 from csv import QUOTE_NONNUMERIC
-from urllib.request import urlopen as uReq
+from urllib.request import urlopen as uReq  # GET Request >> requests library
 from bs4 import BeautifulSoup as soup
+
+# qoutes <div> >> <p> aquotes 
 
 # legal github page from the course owner.. to scrape data from
 quotesPage = 'https://bluelimelearning.github.io/my-fav-quotes/'
 
+# link = "https://github.com/inightjar"
 
 uCleint = uReq(quotesPage)
 
